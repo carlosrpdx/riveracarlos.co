@@ -1,0 +1,16 @@
+{
+  "name": "carlosrivera.co",
+  "version": "1.0.0",
+  "description": "Portfolio Website - www.carlosrivera.co",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "next": "^13.2.4",
+    "react": "^18.2.0"
+  }
+}
