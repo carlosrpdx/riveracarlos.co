@@ -29,19 +29,6 @@ export default function Home() {
             <p>A glimpse into my life and personality.
               This is a space of my favortie books, movies, music, and more.</p>
           </a>
-          {/*}
-          <a href="projects" className={styles.card}>
-            <h3>Projects &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-           <a href="contact"
-            className={styles.card}>
-            <h3>Contact &rarr;</h3>
-            <p>
-            Get in touch! Email address, phone number, and links to relevant online profiles. Let's connect!
-            </p>
-          </a>
-        {*/}
         </div>
       </main>
         
