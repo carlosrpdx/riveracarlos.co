@@ -1,0 +1,35 @@
+.navContainer {
+    background-color: rgb(232, 212, 186, 0.2);
+    border: 1px solid #F5DEB3;
+    border-radius: 5px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    /* Add this line */
+    top: 0;          /* Add this line */
+    z-index: 1000;   /* Add this line */
+}
+
+.navLinks{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 10px 10px;
+    padding: 10px 10px;
+    margin: 0 auto;
+}
+
+.navLink{
+    text-decoration: none;
+    color: rgb(0, 0, 0, 0.6);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 20px 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .navLinks{
+        flex-direction: column;
+    }
+}
