@@ -1,93 +1,103 @@
 .container {
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    width: 100%;
-    height: 100%;
-    padding-top: 300px;
-    background-color: rgb(243, 239, 234, 0.5); /* Add vintage background color */
-  }
-  
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  max-width: 1000px;
+  width: 100%;
+  height: 100%;
+  padding-top: 250px;
+}
+
 .title {
-  color: #4B3F3C;
+  color: #ffffff; /* Updated title color */
   font-size: 4.7rem;
   font-weight: 700;
   margin: 20px auto;
   border-radius: 5px;
   padding: 20px 20px;
+  text-shadow: 0 0 10px rgb(255, 255, 255, 0.5), 0 0 2px #ffffff, 0 0 2px #ffffff; /* Updated glowing effect for the title */
+  z-Index: 1;
 }
 
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(600px, 2fr));
   grid-gap: 0.5rem;
-  border: 1px solid rgba(141, 119, 102, 0.5);
+  border-radius: 5px;
   height: auto;
   border-radius: 5px;
   padding: 25px 25px;
-  margin: auto;
+  z-Index: 1;
 }
 
 .card {
   text-decoration: none;
-  border: 1px solid rgba(141, 119, 102, 0.5);
-  transition: color 0.15s ease, border-color 0.15s ease, background-color 0.15s ease;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
-  padding: 40px 40px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 30px 40px;
   height: auto;
-  background-color: rgb(232, 212, 186, 0.8);
+  background-color: rgb(30, 30, 30); /* Updated background color */
+  z-Index: 1;
+  text-align: left;
+  align-self : center;
+  justify-content: center;
 }
 
 .card:hover,
 .card:focus,
 .card:active {
-  background-color: #DCC5A5;
+  background-color: rgba(17, 17, 17, 0.8);
+  color: rgb(255, 75, 75, 0.8);
 }
 
+.card h3,
+.card p,
+.card li {
+  color: #ccc; /* Updated text color */
+}
+
+.card h1,
+.card h2{
+  color: rgb(255, 75, 75, 0.8); /* Updated text color */
+}
+
+
 .card h1 {
-  margin: 30px auto;
-  font-size: 2.5rem;
-  color: #4B3F3C;
-  text-align: center;
+  margin: 10px auto 10px;
+  font-size: 1.5rem;
 }
 
 .card h2 {
-  margin: 20px 0px;
-  font-size: 2rem;
-  color: #60544D;
-  text-align: center;
+  margin: 10px auto 10px;
+  font-size: 1.5rem;
 }
 
 .card h3 {
-  margin: 20px 0px;
-  font-size: 1.5rem;
-  color: #746A65;
-  text-align: center;
+  font-size: 1.3rem;
 }
 
 .card p {
-  margin: 10px 0px;
-  font-size: 1.1rem;
-  color: #60544D;
+  font-size: 1rem;
 }
 
-.card li{
-  margin: 10px 0px;
-  font-size: 1.1rem;
-  color: #60544D;
+.card li {
+  margin: 10px auto 10px;
+  font-size: 1rem;
 }
 
 .card ul {
-  margin: 10px 0px;
+  margin: 10px auto 10px;
   list-style: none;
-  padding: 0;
-  text-align: left;
+  padding: 10px;
 }
 
 @media (max-width: 600px) {
   .grid {
     grid-template-columns: 1fr;
   }
+
+  .card h1, .card h2, .card h3{
+    text-align: center;
+  }
 }
-  

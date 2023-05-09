@@ -1,35 +1,43 @@
 .navContainer {
-    background-color: rgb(232, 212, 186, 0.2);
-    border: 1px solid #F5DEB3;
-    border-radius: 5px;
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    /* Add this line */
-    top: 0;          /* Add this line */
-    z-index: 1000;   /* Add this line */
+  background-color: rgb(30, 30, 30); /* Updated background color */
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Added box-shadow */
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  top: 0;
+  z-index: 1000;
 }
 
-.navLinks{
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    margin: 10px 10px;
-    padding: 10px 10px;
-    margin: 0 auto;
+  
+.navLinks {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin: 10px 10px;
+  padding: 10px 10px;
+  margin: 0 auto;
 }
 
-.navLink{
-    text-decoration: none;
-    color: rgb(0, 0, 0, 0.6);
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin: 20px 20px;
+.navLink {
+  text-decoration: none;
+  color: rgba(204, 204, 204, 0.8); /* Updated link color */
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 20px 20px;
+  transition: color 0.15s ease; /* Add transition for hover effect */
+}
+
+.navLink:hover,
+.navLink:focus,
+.navLink:active {
+  color: #ff4b4b; /* Updated hover/focus/active link color */
 }
 
 @media screen and (max-width: 768px) {
-    .navLinks{
-        flex-direction: column;
-    }
+  .navLinks {
+    flex-direction: column;
+  }
 }
+  

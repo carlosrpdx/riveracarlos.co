@@ -1,7 +1,8 @@
 import Head from 'next/head';
 import Layout from '../components/layout';
-import styles from '../styles/Resume.module.css';
 import UI from '../styles/UI.module.css';
+import Image from 'next/image';
+import styles from '../styles/Resume.module.css';
 
 export default function Resume() {
   return (
@@ -15,11 +16,28 @@ export default function Resume() {
           <div className={UI.card}>
             <h2>Carlos Rivera</h2>
             <h3>Computer Science Student | Technology Service Technician</h3>
-            <p>Phone: 503-997-8492</p>
-            <p>Email: riveracarlos.co@gmail.com</p>
-            <p>Website: Carlosrivera.co</p>
-            <p>Linked In: Carlosrpdx</p>
-            <p>Github: Carlosrpdx</p>
+            <ul>
+              <div className={styles.miniGrid}>
+                <Image src="/phone.svg" alt="Phone Logo" width={42} height={36}/>
+                <p>503-997-8492</p>
+                </div>
+              <div className={styles.miniGrid}>
+                <Image src="/email.svg" alt="Email Logo" width={42} height={36}/>
+                <p>Email: riveracarlos.co@gmail.com</p>
+              </div>
+              <div className={styles.miniGrid}>
+                <Image src="/home.svg" alt="Website Logo" width={42} height={36}/>
+                <p>Carlosrivera.co</p>
+              </div>
+              <div className={styles.miniGrid}>
+                <Image src="/linkedin.svg" alt="LinkedIn Logo" width={42} height={36}/>
+                <p>Carlosrpdx</p>
+              </div>
+              <div className={styles.miniGrid}>
+                <Image src="/github.svg" alt="Github Logo" width={42} height={36}/>
+                <p>Carlosrpdx</p>
+              </div>
+            </ul>
           </div>
 
           <div className={UI.card}>
@@ -29,19 +47,25 @@ export default function Resume() {
 
           <div className={UI.card}>
             <h2>WORK EXPERIENCE</h2>
-            <h3>Multnomah Athletic Club</h3>
-              <ul>
-                <li><strong>Technology Service Technician I</strong></li>
-                <li><strong>Full-Time</strong></li>
-                <li><strong>Portland, OR</strong></li>
-              <ul>
-                <li>Monitored & resolved technology support tickets for 700+ end users across a Microsoft Exchange Hybrid environment. I provided support over the phone, email, and video conferencing. All activity was tracked and reviewed in Zendesk ticketing system.</li>
-                <li>Created and maintained documentation for Microsoft applications and 3rd Party software. (NorthStar, Genentech, Insight Software, VMWare Horizon, iLand 365 Backup).</li>
-                <li>Diagnosed and troubleshoot end user devices and business systems (Windows/ Mac OS Computers, POS Terminals, Printers, Virtual machines, Commercial Displays, Conference Rooms).</li>
-                <li>Automated access for end users by using Azure dynamic membership groups and 3rd party software access using Azure SAML Authentication.</li>
-                <li>Worked closely with Executive Leadership, Directors, Department Managers & Supervisors, Members of the Club and Board of Trustees.</li>
-              </ul>
-            <h3>Amazon</h3>
+              <div className={styles.miniGrid}>
+                <h3>Multnomah Athletic Club</h3>
+              </div>
+                <ul>
+                  <li><strong>Technology Service Technician I</strong></li>
+                  <li><strong>Full-Time</strong></li>
+                  <li><strong>Portland, OR</strong></li>
+                </ul>
+                <ul>
+                  <li>Monitored & resolved technology support tickets for 700+ end users across a Microsoft Exchange Hybrid environment. I provided support over the phone, email, and video conferencing. All activity was tracked and reviewed in Zendesk ticketing system.</li>
+                  <li>Created and maintained documentation for Microsoft applications and 3rd Party software. (NorthStar, Genentech, Insight Software, VMWare Horizon, iLand 365 Backup).</li>
+                  <li>Diagnosed and troubleshoot end user devices and business systems (Windows/ Mac OS Computers, POS Terminals, Printers, Virtual machines, Commercial Displays, Conference Rooms).</li>
+                  <li>Automated access for end users by using Azure dynamic membership groups and 3rd party software access using Azure SAML Authentication.</li>
+                  <li>Worked closely with Executive Leadership, Directors, Department Managers & Supervisors, Members of the Club and Board of Trustees.</li>
+                </ul>
+              <div className={styles.miniGrid}>
+                <Image className={styles.icon} src="/amazon.svg" alt="Amazon Logo" width={52} height={46} />
+                <h3>Amazon</h3>
+              </div>
               <ul>
                 <li><strong>Sales Associate I</strong></li>
                 <li><strong>Part-Time</strong></li>
@@ -52,7 +76,10 @@ export default function Resume() {
                 <li>Ability to multi-task and work in a fast-paced environment.</li>
                 <li>Monitor sales metrics & inventory including books, amazon first & 3rd party devices, and top selling merchandise from amazon.com.</li>
               </ul>
-            <h3>Verizon Wireless</h3>
+              <div className={styles.miniGrid}>
+                <Image className={styles.icon} src="/verizon.svg" alt="Verizon Logo" width={52} height={46} />
+                <h3>Verizon Wireless </h3>
+              </div>
               <ul>
                 <li><strong>Sales Associate I</strong></li>
                 <li><strong>Full-Time</strong></li>
@@ -63,9 +90,7 @@ export default function Resume() {
                   <li>Inventory management for phones, tablet, and mobile internet devices.</li>
                   <li>End users troubleshooting over the phone and onsite. Provided efficient and satisfactory solutions.</li>
                 </ul>
-            </ul>
           </div>     
-
           <div className={UI.card}>
             <h2>EDUCATION</h2>
             <h3>Portland Community College</h3>
@@ -94,39 +119,39 @@ export default function Resume() {
           
           <div className={UI.card}>
           <h2>SKILLS</h2>
-          <h3>Languages</h3>
+          <h3>Programming</h3>
             <ul>
-              <li>C</li>
-              <li>C++</li>
-              <li>Java</li>
-              <li>Python</li>
-              <li>PowerShell</li>
-              <li>Bash</li>
-              <li>JavaScript</li>
-              <li>HTML</li>
-              <li>CSS</li>
+              <Image src="/c.svg" alt="C Logo" width={52} height={46} />
+              <Image src="/c++.svg" alt="C++ Logo" width={52} height={46} />
+              <Image src="/java.svg" alt="Java Logo" width={52} height={46} />
+              <Image src="/python.svg" alt="Python Logo" width={52} height={46} />
+              <Image src="/ps.svg" alt="Powershell Logo" width={52} height={46} />
+              <Image src="/js.svg" alt="Javascript Logo" width={52} height={46} />
+              <Image src="/html.svg" alt="HTML Logo" width={52} height={46} />
+              <Image src="/css.svg" alt="CSS Logo" width={52} height={46} />
+            </ul>
+          <h3>Frameworks</h3>
+            <ul>
+              <Image src="/react.svg" alt="React Logo" width={52} height={46} />
+              <Image src="/nextjs.svg" alt="Next-JS Logo" width={52} height={46} />
             </ul>
           <h3>Systems</h3>
             <ul>
-              <li>UNIX</li>
-              <li>Linux (Ubuntu | Debian)</li>
-              <li>Windows (Home | Pro | Enterprise)</li>
-              <li>Windows Server</li>
-              <li>MacOS (Intel | ARM)</li>
-              <li>Virtual Desktops (VMWare Horizon)</li>
+              <Image src="/linux.svg" alt="Linux Logo" width={52} height={46} />
+              <Image src="/ubuntu.svg" alt="Ubuntu Logo" width={52} height={46} />
+              <Image src="/windows.svg" alt="Windows Logo" width={52} height={46} />
+              <Image src="/macos.svg" alt="MacOS Logo" width={52} height={46} />
+              <Image src="/vm.svg" alt="VM Logo" width={52} height={46} />
             </ul>
-          <h3>Software & Tools</h3>
+          <h3>Tools</h3>
             <ul>
-              <li>Git</li>
-              <li>Vim</li>
-              <li>gcc</li>
-              <li>makefile</li>
-              <li>gdb</li>
-              <li>Microsoft Azure (End User Administration)</li>
-              <li>Microsoft Active Directory & Exchange</li>
-              <li>Enterprise Application Implementation (SQL and Non-SQL)</li>
-              <li>Zendesk Ticketing System</li>
-              <li>Avaya Phone Systems</li>
+              <Image src="/git.svg" alt="Git Logo" width={52} height={46} />
+              <Image src="/github.svg" alt="Github Logo" width={52} height={46} />
+              <Image src="/vim.svg" alt="Vim Logo" width={52} height={46} />
+              <Image src="/zendesk.svg" alt="Zendesk Logo" width={52} height={46} />
+              <Image src="/vs.svg" alt="VS-Code Logo" width={52} height={46} />
+              <Image src="/azure.svg" alt="Azure Logo" width={52} height={46} />
+              <Image src="/mysql.svg" alt="MySQL Logo" width={52} height={46} />
             </ul>
             </div>
           </div>

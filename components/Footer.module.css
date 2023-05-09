@@ -1,18 +1,23 @@
-.footerContainer{
-    background-color: rgb(232, 212, 186, 0.2);
-    display: flex;
-    border: 1px solid #F5DEB3;
-    border-radius: 5px;
-    width: 100%;
-    height: 100px;
-    justify-content: center;
-    align-items: center; /* Add this line */
-    bottom: 0;          /* Add this line */
-    z-index: 1000;   /* Add this line */
+.footerContainer {
+  background-color: rgb(30, 30, 30); /* Updated background color */
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8); /* Added box-shadow */
+  display: flex;
+  width: 100%;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  z-index: 1000;
 }
-.icon{
-    opacity: 0.8;
+
+.icon {
+  color: #ccc; /* Updated icon color */
+  opacity: 0.8;
+  transition: color 0.15s ease, opacity 0.15s ease; /* Add transition for hover effect */
 }
-.icon:hover{
-    opacity: 1;
+
+.icon:hover {
+  color: #ff4b4b; /* Updated hover icon color */
+  opacity: 1;
 }
