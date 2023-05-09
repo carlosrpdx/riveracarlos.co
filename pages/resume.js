@@ -3,6 +3,7 @@ import Layout from '../components/layout';
 import UI from '../styles/UI.module.css';
 import Image from 'next/image';
 import styles from '../styles/Resume.module.css';
+import Link from 'next/link';
 
 export default function Resume() {
   return (
@@ -18,24 +19,26 @@ export default function Resume() {
             <h3>Computer Science Student | Technology Service Technician</h3>
             <ul>
               <div className={styles.miniGrid}>
-                <Image src="/phone.svg" alt="Phone Logo" width={42} height={36}/>
-                <p>503-997-8492</p>
+                <Image className={styles.icon} src="/phone.svg" alt="Phone Logo" width={42} height={36}/>
+                  <p>503-997-8492</p>
                 </div>
               <div className={styles.miniGrid}>
-                <Image src="/email.svg" alt="Email Logo" width={42} height={36}/>
-                <p>Email: riveracarlos.co@gmail.com</p>
+                <Image className={styles.icon} src="/email.svg" alt="Email Logo" width={42} height={36}/>
+                <p>riveracarlos.co@gmail.com</p>
               </div>
               <div className={styles.miniGrid}>
-                <Image src="/home.svg" alt="Website Logo" width={42} height={36}/>
-                <p>Carlosrivera.co</p>
+                <Image className={styles.icon} src="/home.svg" alt="Website Logo" width={42} height={36}/>
+                <Link href ='/'><p>Carlosrivera.co</p></Link>
               </div>
               <div className={styles.miniGrid}>
-                <Image src="/linkedin.svg" alt="LinkedIn Logo" width={42} height={36}/>
-                <p>Carlosrpdx</p>
+                <Link href="https://www.linkedin.com/in/carlosrpdx/">
+                    <Image className={styles.icon} src="/linkedin.svg" alt="LinkedIn Logo" width={42} height={36} />
+                </Link>
               </div>
               <div className={styles.miniGrid}>
-                <Image src="/github.svg" alt="Github Logo" width={42} height={36}/>
-                <p>Carlosrpdx</p>
+                <Link href="https://github.com/carlosrpdx">
+                    <Image className={styles.icon} src="/github.svg" alt="GitHub Logo" width={42} height={36} />
+                </Link>
               </div>
             </ul>
           </div>
@@ -121,37 +124,37 @@ export default function Resume() {
           <h2>SKILLS</h2>
           <h3>Programming</h3>
             <ul>
-              <Image src="/c.svg" alt="C Logo" width={52} height={46} />
-              <Image src="/c++.svg" alt="C++ Logo" width={52} height={46} />
-              <Image src="/java.svg" alt="Java Logo" width={52} height={46} />
-              <Image src="/python.svg" alt="Python Logo" width={52} height={46} />
-              <Image src="/ps.svg" alt="Powershell Logo" width={52} height={46} />
-              <Image src="/js.svg" alt="Javascript Logo" width={52} height={46} />
-              <Image src="/html.svg" alt="HTML Logo" width={52} height={46} />
-              <Image src="/css.svg" alt="CSS Logo" width={52} height={46} />
+              <Image className={styles.icon} src="/c.svg" alt="C Logo" width={52} height={46} />
+              <Image className={styles.icon} src="/c++.svg" alt="C++ Logo" width={52} height={46} />
+              <Image className={styles.icon} src="/java.svg" alt="Java Logo" width={52} height={46} />
+              <Image className={styles.icon} src="/python.svg" alt="Python Logo" width={52} height={46} />
+              <Image className={styles.icon} src="/ps.svg" alt="Powershell Logo" width={52} height={46} />
+              <Image className={styles.icon} src="/js.svg" alt="Javascript Logo" width={52} height={46} />
+              <Image className={styles.icon} src="/html.svg" alt="HTML Logo" width={52} height={46} />
+              <Image className={styles.icon} src="/css.svg" alt="CSS Logo" width={52} height={46} />
             </ul>
           <h3>Frameworks</h3>
             <ul>
-              <Image src="/react.svg" alt="React Logo" width={52} height={46} />
-              <Image src="/nextjs.svg" alt="Next-JS Logo" width={52} height={46} />
+              <Image className={styles.icon} src="/react.svg" alt="React Logo" width={52} height={46} />
+              <Image className={styles.icon} src="/nextjs.svg" alt="Next-JS Logo" width={52} height={46} />
             </ul>
           <h3>Systems</h3>
             <ul>
-              <Image src="/linux.svg" alt="Linux Logo" width={52} height={46} />
-              <Image src="/ubuntu.svg" alt="Ubuntu Logo" width={52} height={46} />
-              <Image src="/windows.svg" alt="Windows Logo" width={52} height={46} />
-              <Image src="/macos.svg" alt="MacOS Logo" width={52} height={46} />
-              <Image src="/vm.svg" alt="VM Logo" width={52} height={46} />
+              <Image className={styles.icon} src="/linux.svg" alt="Linux Logo" width={52} height={46} />
+              <Image className={styles.icon} src="/ubuntu.svg" alt="Ubuntu Logo" width={52} height={46} />
+              <Image className={styles.icon} src="/windows.svg" alt="Windows Logo" width={52} height={46} />
+              <Image className={styles.icon} src="/macos.svg" alt="MacOS Logo" width={52} height={46} />
+              <Image className={styles.icon} src="/vm.svg" alt="VM Logo" width={52} height={46} />
             </ul>
           <h3>Tools</h3>
             <ul>
-              <Image src="/git.svg" alt="Git Logo" width={52} height={46} />
-              <Image src="/github.svg" alt="Github Logo" width={52} height={46} />
-              <Image src="/vim.svg" alt="Vim Logo" width={52} height={46} />
-              <Image src="/zendesk.svg" alt="Zendesk Logo" width={52} height={46} />
-              <Image src="/vs.svg" alt="VS-Code Logo" width={52} height={46} />
-              <Image src="/azure.svg" alt="Azure Logo" width={52} height={46} />
-              <Image src="/mysql.svg" alt="MySQL Logo" width={52} height={46} />
+              <Image className={styles.icon} src="/git.svg" alt="Git Logo" width={52} height={46} />
+              <Image className={styles.icon} src="/github.svg" alt="Github Logo" width={52} height={46} />
+              <Image className={styles.icon} src="/vim.svg" alt="Vim Logo" width={52} height={46} />
+              <Image className={styles.icon} src="/zendesk.svg" alt="Zendesk Logo" width={52} height={46} />
+              <Image className={styles.icon} src="/vs.svg" alt="VS-Code Logo" width={52} height={46} />
+              <Image className={styles.icon} src="/azure.svg" alt="Azure Logo" width={52} height={46} />
+              <Image className={styles.icon} src="/mysql.svg" alt="MySQL Logo" width={52} height={46} />
             </ul>
             </div>
           </div>

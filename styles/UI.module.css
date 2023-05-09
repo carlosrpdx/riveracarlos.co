@@ -26,7 +26,7 @@
   border-radius: 5px;
   height: auto;
   border-radius: 5px;
-  padding: 25px 25px;
+  padding: 10px 10px;
   z-Index: 1;
 }
 
@@ -35,20 +35,13 @@
   border-radius: 5px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
-  padding: 30px 40px;
+  padding: 20px 20px;
   height: auto;
   background-color: rgb(30, 30, 30); /* Updated background color */
   z-Index: 1;
   text-align: left;
   align-self : center;
   justify-content: center;
-}
-
-.card:hover,
-.card:focus,
-.card:active {
-  background-color: rgba(17, 17, 17, 0.8);
-  color: rgb(255, 75, 75, 0.8);
 }
 
 .card h3,
@@ -62,10 +55,13 @@
   color: rgb(255, 75, 75, 0.8); /* Updated text color */
 }
 
-
 .card h1 {
   margin: 10px auto 10px;
   font-size: 1.5rem;
+}
+
+.link:hover {
+  color: rgba(255, 255, 255, 0.8); /* Updated text color */
 }
 
 .card h2 {
@@ -79,22 +75,29 @@
 
 .card p {
   font-size: 1rem;
+  text-align: left;
 }
 
 .card li {
-  margin: 10px auto 10px;
+  margin: 5px auto;
   font-size: 1rem;
+  margin: 10px auto;
+  padding: 0;
 }
 
 .card ul {
-  margin: 10px auto 10px;
+  margin: 0px auto;
   list-style: none;
-  padding: 10px;
+  padding: 1px;
 }
 
 @media (max-width: 600px) {
   .grid {
     grid-template-columns: 1fr;
+  }
+
+  .card{
+    padding: 10px 15px;
   }
 
   .card h1, .card h2, .card h3{

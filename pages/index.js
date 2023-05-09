@@ -18,17 +18,21 @@ export default function Home() {
           Carlos Rivera
         </h1>
         <div className={UI.grid}>
-          <Link href="resume" className={UI.card}>
-            <h2>Resume &rarr;<Image className={styles.icon} src="/resume.svg" alt="Resume Logo" width={82} height={26} /></h2>
+          <div className={UI.card}>
+          <Link href="resume">
+            <h2 className={UI.link}>Resume &rarr;<Image className={styles.icon} src="/resume.svg" alt="Resume Logo" width={82} height={26} /></h2>
+            </Link>
             <p>
               A comprehensive overview of education, work history, achievements, and skills. 
             </p>
+          </div>
+          <div className={UI.card}>
+          <Link href="interests">
+            <h2 className={UI.link} >Interests &rarr;<Image className={styles.icon} src="/happy.svg" alt="Happy Logo" width={82} height={26} /></h2>
           </Link>
-          <Link href="interests" className={UI.card}>
-            <h2>Interests &rarr;<Image className={styles.icon} src="/happy.svg" alt="Happy Logo" width={82} height={26} /></h2>
             <p>A glimpse into my life and personality.
               This is a space of my favortie books, movies, music, and more.</p>
-          </Link>
+          </div>
         </div>
     </div>
     </Layout>

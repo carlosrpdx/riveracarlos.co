@@ -1,7 +1,6 @@
 .icon{
-    display: flex;
-    text-align: center;
     justify-content: center;
+    margin: 5px 5px;
 }
 .miniGrid{
     display: flex;
@@ -9,5 +8,16 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: left;
-    margin: 10px auto;
+    margin: 0px auto;
 }
+
+@media (max-width: 600px) {
+    .miniGrid{
+        justify-content: center;
+    }
+    .icon{
+        justify-content: left;
+        margin: 5px 5px;
+    }
+}
+  
