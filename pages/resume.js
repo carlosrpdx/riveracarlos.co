@@ -17,32 +17,29 @@ export default function Resume() {
           <div className={UI.card}>
             <h2>Carlos Rivera</h2>
             <h3>Computer Science Student | Technology Service Technician</h3>
-            <ul>
-              <div className={styles.miniGrid}>
+            <div className={styles.contactGrid}>
+                <div className={styles.iconAndText}>
                 <Image className={styles.icon} src="/phone.svg" alt="Phone Logo" width={42} height={36}/>
                   <p>503-997-8492</p>
                 </div>
-              <div className={styles.miniGrid}>
-                <Image className={styles.icon} src="/email.svg" alt="Email Logo" width={42} height={36}/>
-                <p>riveracarlos.co@gmail.com</p>
+                <div className={styles.iconAndText}>
+                  <Image className={styles.icon} src="/email.svg" alt="Email Logo" width={42} height={36}/>
+                  <p>riveracarlos.co@gmail.com</p>
+                </div>
+                  <div className={styles.iconAndText}>
+                  <Image className={styles.icon} src="/home.svg" alt="Website Logo" width={42} height={36}/>
+                  <Link href ='/'><p>Carlosrivera.co</p></Link>
+                </div>
               </div>
-              <div className={styles.miniGrid}>
-                <Image className={styles.icon} src="/home.svg" alt="Website Logo" width={42} height={36}/>
-                <Link href ='/'><p>Carlosrivera.co</p></Link>
-              </div>
-              <div className={styles.miniGrid}>
+            <div className={styles.contactGrid}>
                 <Link href="https://www.linkedin.com/in/carlosrpdx/">
                     <Image className={styles.icon} src="/linkedin.svg" alt="LinkedIn Logo" width={42} height={36} />
                 </Link>
-              </div>
-              <div className={styles.miniGrid}>
                 <Link href="https://github.com/carlosrpdx">
                     <Image className={styles.icon} src="/github.svg" alt="GitHub Logo" width={42} height={36} />
                 </Link>
               </div>
-            </ul>
           </div>
-
           <div className={UI.card}>
             <h2>PROFESSIONAL SUMMARY</h2>
             <p>As a skilled and experienced student at Portland State University, I bring a unique blend of technical expertise and business acumen to the table. With 1 year of professional experience in technology support and 2 years of computer science coursework, I am well-versed in managing business problems, analyzing needs, and implementing effective solutions. I am now eager to take the next step in my career by seeking an internship in software development, where I can apply my skills, passion for problem-solving and my ability to think critically in a dynamic and innovative environment. I am confident that I will be an asset to any team, and I am eager to contribute my talents to help drive success.</p>

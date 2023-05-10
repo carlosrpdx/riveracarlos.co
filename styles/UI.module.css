@@ -97,7 +97,11 @@
   }
 
   .card{
-    padding: 10px 15px;
+    padding: 20px 15px;
+  }
+
+  .card p{
+    margin: 5px auto;
   }
 
   .card h1, .card h2, .card h3{
